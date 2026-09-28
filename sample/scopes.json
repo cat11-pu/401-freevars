@@ -1,0 +1,16 @@
+{
+  "budget": 2,
+  "bad_name_code": "E_BAD_NAME",
+  "dup_code": "E_DUP_NAME",
+  "no_fun_code": "E_NO_FUN",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "funs": [], "caps": [], "free_n": 0, "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "def", "name": "outer", "parent": "", "params": ["x"], "uses": ["x", "y"] },
+    { "id": 2, "kind": "def", "name": "inner", "parent": "outer", "params": ["z"], "uses": ["x", "z", "w"] },
+    { "id": 3, "kind": "def", "name": "sub", "parent": "outer", "params": ["k"], "uses": ["k", "x"] },
+    { "id": 4, "kind": "cap", "name": "inner" },
+    { "id": 5, "kind": "cap", "name": "outer" },
+    { "id": 6, "kind": "cap", "name": "sub" }
+  ]
+}
